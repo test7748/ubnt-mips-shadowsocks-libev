@@ -34,7 +34,7 @@ wget --no-check-certificate https://tls.mbed.org/download/mbedtls-$mbedtls_ver-g
 
 echo -e "$green Installing pcre...$end"
 cd
-wget https://ftp.pcre.org/pub/pcre/pcre-$pcre_ver.tar.bz2 \
+wget https://ftp.exim.org/pub/pcre/pcre-$pcre_ver.tar.bz2 \
     && tar xvf pcre-$pcre_ver.tar.bz2 \
     && cd pcre-$pcre_ver \
     && ./configure --host=$host --prefix=$prefix_path/pcre --disable-shared --enable-utf8 --enable-unicode-properties \
@@ -61,7 +61,7 @@ wget http://dist.schmorp.de/libev/Attic/libev-$libev_ver.tar.gz \
 
 echo -e "$green Installing cares...$end"
 cd
-wget https://c-ares.haxx.se/download/c-ares-$cares_ver.tar.gz \
+wget https://c-ares.org/archive/c-ares-$cares_ver.tar.gz \
     && tar xvf c-ares-$cares_ver.tar.gz \
     && cd c-ares-$cares_ver \
     && ./configure --host=$host --prefix=$prefix_path/libcares --disable-shared --enable-utf8 --enable-unicode-properties \
