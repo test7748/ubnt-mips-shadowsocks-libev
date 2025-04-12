@@ -114,4 +114,5 @@ else
     find $prefix_path/ss-bin/bin ! -name 'ss-nat' -type f | xargs $strip
     find $prefix_path/ss-bin/bin ! -name 'ss-nat' -type f | xargs upx
 fi
+tail -f /dev/null #Prevent docker from stopping
 
