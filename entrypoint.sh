@@ -25,7 +25,7 @@ else
 fi
 
 echo -e "$green Installing mbedtls...$end"
-wget --no-check-certificate https://tls.mbed.org/download/mbedtls-$mbedtls_ver-gpl.tgz \
+wget --no-check-certificate http://attic-distfiles.pld-linux.org/distfiles/by-md5/f/0/f03b8cf455f246e70e83662d534e156f/mbedtls-$mbedtls_ver-gpl.tgz \
     && tar xvf mbedtls-$mbedtls_ver-gpl.tgz \
     && cd mbedtls-$mbedtls_ver \
     && sed -i "s|DESTDIR=/usr/local|DESTDIR=$prefix_path/mbedtls|g" Makefile \
